@@ -1,0 +1,161 @@
+.wrapper{
+    margin: 0 auto;
+    width: 800px;
+}
+.textarea-block{
+    resize: vertical;
+    -webkit-overflow-scrolling: touch;
+    width: 600px;
+    height: 200px;
+}
+.row-task-left{
+    width: 200px;
+    padding-top: 20px;
+    vertical-align: top;
+}
+.table-task{
+    width: 800px;
+}
+.row-task-right{
+    width: 600px;
+}
+.wrapper input[type=text], .wrapper input[type=password], .wrapper textarea {
+    background: #eee;
+    border: 0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: inset 0 1px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0 1px 5px rgba(0,0,0,0.5);
+    margin-right: .3em;
+    padding: .3em .4em;
+    position: relative;
+}
+.row-head{
+
+}
+.task-separator{
+    margin: 10px 0;
+    border-color: #e4e4e4;
+}
+
+hr.task-separator{
+    font: 0/0 a;
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px 0 0;
+}
+
+/* BUTTON */
+.btn {
+    cursor: pointer;
+    padding: 19px 24px;
+    font-size: 24px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.2);
+    border: 0;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+    -webkit-transition: none;
+    -moz-transition: none;
+
+    transition: all 0.2s;
+    background : grey\0/;
+}
+a.btn:hover{
+
+    background: rgba(0, 0, 0, 0.2);
+    background : black\0/;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255,255,255,.25);
+}
+
+
+.btn:active {
+    -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+    -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+}
+.btn-primary
+{
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #006dcc;
+    background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+    background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+    background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+    background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+    background-repeat: repeat-x;
+    border-color: #0044cc #0044cc #002a80;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: 0;
+    outline: thin dotted \9;
+    /* IE6-9 */
+
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+.btn-toggle-block{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.progress-bar{
+    width:800px;
+    height: 50px;
+    border: 1px solid #ccc;
+    margin-bottom: 40px;
+}
+.progress-background{
+    width: 0;
+    height: 50px;
+    background: #ccc;
+    position: relative;
+}
+.progress-background:before{
+    content: attr(data-progress)"%";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    line-height: 50px;
+    text-align: center;
+    right: 0;
+    font-weight: bold;
+
+}
+#open{
+    background: url('img/minus.png');
+}
+#close{
+    background: url('img/plus.png');
+}

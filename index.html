@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Анкета</title>
+    <!-- js -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery-min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/my_script.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+</head>
+<body>
+
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
+<script type="text/template" id="taskItemTpl">
+    <tr class="row-head">
+        <td class="row-task-left">
+            <em>Вопрос <%=id%></em>
+            <div id="open" class="btn-toggle-block"></div>
+        </td>
+        <td class="row-task-right">
+            <h3><%=title%></h3>
+            <textarea name="<%=name%>" class="textarea-block"></textarea>
+        </td>
+    </tr>
+    <tr><td colspan="2"><hr class="task-separator"></td></tr>
+</script>
+
+<h1>Анкета второй Школы разработки интерфейсов в Москве</h1>
+<div class="wrapper">
+    <form  action="server/url" method="post" enctype="multipart/form-data" id="vacancy_form">
+        <table class="table-task">
+        </table>
+        <div class="progress-bar">
+            <div class="progress-background" data-progress="0"></div>
+        </div>
+        <a class="btn sendForm">ОТПРАВИТЬ</a>
+        &nbsp;
+        <a class="btn clearForm">ОЧИСТИТЬ</a>
+    </form>
+
+</div>
+
+
+</body>
+</html>
